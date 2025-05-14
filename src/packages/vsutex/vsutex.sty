@@ -1,0 +1,133 @@
+% !TEX TS-program = lualatex
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{vsutex}[2024/04/03 1.0.0 The tex package for comfort creating tex reports for Voronezh state university]
+
+% Define sections without number in toc
+% \nolabel{section}{name}
+\newcommand{\nolabel}[2]{%
+    \csname #1\endcsname*{\phantomsection #2}\addcontentsline{toc}{#1}{#2}
+}
+
+% Add images
+\RequirePackage{graphicx}
+
+% Add dummy images
+\RequirePackage{duckuments}
+\makeatletter
+
+% Set image width by default
+\newlength{\imagewidth}
+\setlength{\imagewidth}{0.8\textwidth}
+
+% Add image with ref
+% \image[image parameters]{caption}{filepath}{ref}
+\newcommand{\@image}[4][width=\imagewidth]{%
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[#1]{#3}
+        \caption{#2}
+        \label{fig:#4}
+    \end{figure}}
+
+% Add image without ref
+% \image*[image parameters]{caption}{filepath}
+\newcommand{\@@image}[3][width=\imagewidth]{%
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[#1]{#3}
+        \caption{#2}
+    \end{figure}}
+
+% Add dummy image with ref
+% \dimage[image parameters]{caption}{ref}
+\newcommand{\@dimage}[3][width=\imagewidth]{\@image[#1]{#2}{example-image-duck}{#3}}
+
+% Add dummy image without ref
+% \dimage*[image parameters]{caption}
+\newcommand{\@@dimage}[2][width=\imagewidth]{\@@image[#1]{#2}{example-image-duck}}
+
+% Internal command
+\long\def\image{\@ifstar\@@image\@image}
+\long\def\dimage{\@ifstar\@@dimage\@dimage}
+
+% Add ref to image in the text
+\newcommand{\refimage}[1]{рис.~\ref{fig:#1}.}
+\makeatother
+
+% Add tables
+\RequirePackage{tabularx}
+\makeatletter
+
+% Set table width by default
+\newlength{\dfwidth}
+\setlength{\dfwidth}{0.8\textwidth}
+
+% Add new column types
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+
+% Add table with ref
+% \begin{df}[width]{columns}{t, m, b}{caption}{ref}
+\NewEnviron{df}[5][\dfwidth]{%
+    \begin{table}[!ht]
+        \centering
+        \let\@oldtabularxcolumn\tabularxcolumn
+        \renewcommand\tabularxcolumn[1]{#3{##1}}
+        \begin{tabularx}{#1}{#2}
+            \BODY
+        \end{tabularx}
+        \let\tabularxcolumn\@oldtabularxcolumn
+        \caption{#4}
+        \label{table:#5}
+    \end{table}
+}
+
+% Add table without ref
+% \begin{df*}[width]{columns}{t, m, b}{caption}
+\NewEnviron{df*}[4][\dfwidth]{%
+    \begin{table}[!ht]
+        \centering
+        \let\@oldtabularxcolumn\tabularxcolumn
+        \renewcommand\tabularxcolumn[1]{#3{##1}}
+        \begin{tabularx}{#1}{#2}
+            \BODY
+        \end{tabularx}
+        \let\tabularxcolumn\@oldtabularxcolumn
+        \caption{#4}
+    \end{table}
+}
+
+% Add ref to table in the text
+\newcommand{\refdf}[1]{табл.~\ref{table:#1}.}
+\makeatother
+
+% Add algorithms
+% Set show line numbers every N lines
+\newcommand{\algeven}{1}
+
+% Add alg with ref
+% \begin{alg}[lines numbers every N lines]{caption}{ref}
+\NewEnviron{alg}[3][\algeven]{%
+    \begin{algorithm}
+        \begin{algorithmic}[#1]
+            \caption{#2}
+                \BODY
+            \label{alg:#3}
+        \end{algorithmic}
+    \end{algorithm}
+}
+
+% Add alg without ref
+% \begin{alg}[lines numbers every N lines]{caption}
+\NewEnviron{alg*}[2][\algeven]{%
+    \begin{algorithm}
+        \begin{algorithmic}[#1]
+            \caption{#2}
+                \BODY
+        \end{algorithmic}
+    \end{algorithm}
+}
+
+% Add ref to alg in the text
+\newcommand{\refalg}[1]{алг.~\ref{alg:#1}.}

@@ -1,0 +1,49 @@
+{
+    "image": "hegerdes/vscode-latex",
+    "name": "LaTeX",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "james-yu.latex-workshop",
+                "tecosaur.latex-utilities",
+                "yzhang.markdown-all-in-one",
+                "valentjn.vscode-ltex"
+            ],
+            "settings": {
+                "latex-workshop.latex.recipe.default": "first",
+                "latex-workshop.latex.autoBuild.run": "onSave",
+                "latex-workshop.latex.tools": [
+                    {
+                        "name": "lualatexmk",
+                        "command": "latexmk",
+                        "args": [
+                            "-synctex=1",
+                            "-interaction=nonstopmode",
+                            "-file-line-error",
+                            "-lualatex",
+                            "-outdir=%OUTDIR%",
+                            "%DOC%"
+                        ],
+                        "env": {}
+                    }
+                ],
+                "latex-workshop.latex.recipes": [
+                    {
+                        "name": "latexmk (lualatex)",
+                        "tools": [
+                            "lualatexmk"
+                        ]
+                    }
+                ],
+                "[latex]": {
+                    "editor.wordWrap": "on"
+                }
+            }
+        }
+    },
+    "postCreateCommand": {
+        "install-times-and-cyrillic": "sed -i 's/main/main contrib non-free non-free-firmware/g' /etc/apt/sources.list.d/debian.sources && apt update -y && apt install -y ttf-mscorefonts-installer texlive-lang-cyrillic",
+        "patch-gost": "curl -s -o temp.zip https://codeload.github.com/kia999/GOST/zip/refs/heads/master && rm -rf /usr/share/texlive/texmf-dist/bibtex/bst/gost/ && unzip -j temp.zip GOST-master/bibtex/bst/gost/* -d /usr/share/texlive/texmf-dist/bibtex/bst/gost/ && for i in $( ls /usr/share/texlive/texmf-dist/bibtex/bst/gost/ ); do mv /usr/share/texlive/texmf-dist/bibtex/bst/gost/$i /usr/share/texlive/texmf-dist/bibtex/bst/gost/p$i; done && rm -rf temp.zip && texhash",
+        "install-vsutex": "ln -sd `find /workspaces -type d -name vsutex 2>/dev/null | head -1` /usr/share/texmf/tex/latex && texhash"
+    }
+}
