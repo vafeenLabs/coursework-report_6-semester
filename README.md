@@ -4,4 +4,4 @@
 
 [Файлы диаграмм ](./drawio/)
 
-[Курсовая](https://github.com/vafeenLabs/Coursework_6-semester)
+[Мобильное приложениен для курсовой](https://github.com/vafeenLabs/Coursework_6-semester)
