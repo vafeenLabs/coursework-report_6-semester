@@ -1,0 +1,130 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.1.1 Chrome/132.0.6834.210 Electron/34.3.3 Safari/537.36" version="26.1.1">
+  <diagram name="бд" id="ctb7gI_ueX9C2qkwRM6h">
+    <mxGraphModel dx="2062" dy="740" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-5" value="&lt;pre style=&quot;font-family: &amp;quot;Fira Code&amp;quot;, monospace;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;Fira Code&amp;quot;, monospace;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;GroupLocalRepository&lt;/font&gt;&lt;/pre&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="124" y="35" width="204" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-6" value="&lt;div&gt;+ getAsFlowGroups()&lt;/div&gt;&lt;div&gt;+ insertGroups()&lt;/div&gt;&lt;div&gt;+ deleteGroups()&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" parent="aLCFNT-XdS_qPV-4GeK4-5" vertex="1">
+          <mxGeometry y="50" width="204" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-7" value="&lt;pre style=&quot;font-family: &amp;quot;Fira Code&amp;quot;, monospace;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;Fira Code&amp;quot;, monospace;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Lesson&lt;/font&gt;LocalRepository&lt;/pre&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="126" y="185" width="204" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-8" value="&lt;div&gt;+ getAsFlowLessons()&lt;/div&gt;&lt;div&gt;+ insertLessons()&lt;/div&gt;&lt;div&gt;+ deleteLessons()&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" parent="aLCFNT-XdS_qPV-4GeK4-7" vertex="1">
+          <mxGeometry y="50" width="204" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-9" value="&lt;pre style=&quot;font-family: &amp;quot;Fira Code&amp;quot;, monospace;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;Fira Code&amp;quot;, monospace;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Reminder&lt;/font&gt;LocalRepository&lt;/pre&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="126" y="334" width="204" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-10" value="&lt;pre style=&quot;font-family: var(--ds-font-family-code); overflow: auto; padding: calc(var(--ds-md-zoom)*8px)calc(var(--ds-md-zoom)*12px); text-wrap-mode: wrap; word-break: break-all; font-size: 12.573px; margin-top: 0px !important; margin-bottom: 0px !important;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;+ getAsFlowReminders()&lt;br&gt;+ getReminderByIdOfReminder()&lt;br&gt;+ insertReminders()&lt;br&gt;+ deleteReminders()&lt;/font&gt;&lt;/pre&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" parent="aLCFNT-XdS_qPV-4GeK4-9" vertex="1">
+          <mxGeometry y="50" width="204" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-11" value="&lt;pre style=&quot;font-family: &amp;quot;Fira Code&amp;quot;, monospace;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;Fira Code&amp;quot;, monospace;&quot;&gt;TeacherLocalRepository&lt;/pre&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="257" y="493" width="204" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-12" value="&lt;pre style=&quot;font-family: var(--ds-font-family-code); overflow: auto; padding: calc(var(--ds-md-zoom)*8px)calc(var(--ds-md-zoom)*12px); text-wrap-mode: wrap; word-break: break-all; font-size: 12.573px; margin-top: 0px !important; margin-bottom: 0px !important;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;+ getAsFlowTeachers()&lt;br&gt;+ insertTeachers()&lt;br&gt;+ deleteTeachers()&lt;/font&gt;&lt;/pre&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" parent="aLCFNT-XdS_qPV-4GeK4-11" vertex="1">
+          <mxGeometry y="50" width="204" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-13" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" parent="1" source="aLCFNT-XdS_qPV-4GeK4-15" target="aLCFNT-XdS_qPV-4GeK4-12" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="420" y="557" as="sourcePoint" />
+            <mxPoint x="580" y="557" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-14" value="&lt;pre style=&quot;font-family: &amp;quot;Fira Code&amp;quot;, monospace;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;TeacherLocalRepositoryImpl&lt;/span&gt;&lt;/pre&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="579" y="490" width="204" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-15" value="&lt;pre style=&quot;font-family: var(--ds-font-family-code); overflow: auto; padding: calc(var(--ds-md-zoom)*8px)calc(var(--ds-md-zoom)*12px); text-wrap-mode: wrap; word-break: break-all; font-size: 12.573px; margin-top: 0px !important; margin-bottom: 0px !important;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;+ getAsFlowTeachers()&lt;br&gt;+ insertTeachers()&lt;br&gt;+ deleteTeachers()&lt;/font&gt;&lt;/pre&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" parent="aLCFNT-XdS_qPV-4GeK4-14" vertex="1">
+          <mxGeometry y="50" width="204" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-16" value="&lt;pre style=&quot;font-family: &amp;quot;Fira Code&amp;quot;, monospace;&quot;&gt;&lt;font style=&quot;background-color: transparent; white-space: normal; color: rgb(0, 0, 0);&quot;&gt;Reminder&lt;/font&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;LocalRepositoryImpl&lt;/span&gt;&lt;/pre&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="403.5" y="334" width="221" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-17" value="&lt;pre style=&quot;font-family: var(--ds-font-family-code); overflow: auto; padding: calc(var(--ds-md-zoom)*8px)calc(var(--ds-md-zoom)*12px); text-wrap-mode: wrap; word-break: break-all; font-size: 12.573px; margin-top: 0px !important; margin-bottom: 0px !important;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;+ getAsFlowReminders()&lt;br&gt;+ getReminderByIdOfReminder()&lt;br&gt;+ insertReminders()&lt;br&gt;+ deleteReminders()&lt;/font&gt;&lt;/pre&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" parent="aLCFNT-XdS_qPV-4GeK4-16" vertex="1">
+          <mxGeometry y="50" width="221" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-18" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" parent="1" source="aLCFNT-XdS_qPV-4GeK4-17" target="aLCFNT-XdS_qPV-4GeK4-10" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="458" y="396" as="sourcePoint" />
+            <mxPoint x="337" y="396" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-19" value="&lt;pre style=&quot;font-family: &amp;quot;Fira Code&amp;quot;, monospace;&quot;&gt;&lt;font style=&quot;background-color: transparent; white-space: normal; color: rgb(0, 0, 0);&quot;&gt;Lesson&lt;/font&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;LocalRepositoryImpl&lt;/span&gt;&lt;/pre&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="403.5" y="185" width="204" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-20" value="&lt;div&gt;+ getAsFlowLessons()&lt;/div&gt;&lt;div&gt;+ insertLessons()&lt;/div&gt;&lt;div&gt;+ deleteLessons()&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" parent="aLCFNT-XdS_qPV-4GeK4-19" vertex="1">
+          <mxGeometry y="50" width="204" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-21" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" parent="1" source="aLCFNT-XdS_qPV-4GeK4-20" target="aLCFNT-XdS_qPV-4GeK4-8" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="405" y="478" as="sourcePoint" />
+            <mxPoint x="340" y="394" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-22" value="&lt;pre style=&quot;font-family: &amp;quot;Fira Code&amp;quot;, monospace;&quot;&gt;GroupLocalRepositoryImpl&lt;/pre&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="403.5" y="35" width="204" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-23" value="&lt;div&gt;+ getAsFlowGroups()&lt;/div&gt;&lt;div&gt;+ insertGroups()&lt;/div&gt;&lt;div&gt;+ deleteGroups()&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" parent="aLCFNT-XdS_qPV-4GeK4-22" vertex="1">
+          <mxGeometry y="50" width="204" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-24" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" parent="1" source="aLCFNT-XdS_qPV-4GeK4-23" target="aLCFNT-XdS_qPV-4GeK4-6" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="421" y="163" as="sourcePoint" />
+            <mxPoint x="347" y="95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-32" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="1" source="aLCFNT-XdS_qPV-4GeK4-6" target="aLCFNT-XdS_qPV-4GeK4-37" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="256" y="186" as="sourcePoint" />
+            <mxPoint x="416" y="186" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-33" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="aLCFNT-XdS_qPV-4GeK4-8" target="sVQ-PdgdpAy3A2vfllQu-2" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="134" y="95" as="sourcePoint" />
+            <mxPoint x="80" y="237" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-34" value="TeacherEntity" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fontColor=default;" parent="1" vertex="1">
+          <mxGeometry x="279" y="652" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-35" value="+name {PK}" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" parent="aLCFNT-XdS_qPV-4GeK4-34" vertex="1">
+          <mxGeometry y="50" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-36" value="GroupEntity" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fontColor=default;" parent="1" vertex="1">
+          <mxGeometry x="-88" y="35" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-37" value="+course {PK}&lt;div&gt;+&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;group {PK}&lt;/span&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" parent="aLCFNT-XdS_qPV-4GeK4-36" vertex="1">
+          <mxGeometry y="50" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-38" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="aLCFNT-XdS_qPV-4GeK4-10" target="sVQ-PdgdpAy3A2vfllQu-3" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="136" y="245" as="sourcePoint" />
+            <mxPoint x="154" y="486" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLCFNT-XdS_qPV-4GeK4-39" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="aLCFNT-XdS_qPV-4GeK4-12" target="aLCFNT-XdS_qPV-4GeK4-34" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="146" y="255" as="sourcePoint" />
+            <mxPoint x="100" y="257" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sVQ-PdgdpAy3A2vfllQu-1" value="LessonEntity" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="-252" y="150" width="330" height="314" as="geometry" />
+        </mxCell>
+        <mxCell id="sVQ-PdgdpAy3A2vfllQu-2" value="&lt;div&gt;+ id {PK}&lt;/div&gt;&lt;div&gt;+ dayOfWeek&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ name&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ startTime&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ endTime&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ classroom&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ teacher&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ subGroup&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ groupId&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ frequency&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ idOfReminderBeforeLesson&amp;nbsp; {FK}&lt;/div&gt;&lt;div&gt;+ idOfReminderAfterBeginningLesson&amp;nbsp; {FK}&lt;/div&gt;&lt;div&gt;+ note&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ linkToCourse&amp;nbsp;&amp;nbsp;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" vertex="1" parent="sVQ-PdgdpAy3A2vfllQu-1">
+          <mxGeometry y="50" width="330" height="264" as="geometry" />
+        </mxCell>
+        <mxCell id="sVQ-PdgdpAy3A2vfllQu-3" value="ReminderEntity" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="-120" y="490" width="330" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="sVQ-PdgdpAy3A2vfllQu-4" value="&lt;div&gt;+ id {PK}&lt;/div&gt;&lt;div&gt;+ idOfReminder&lt;/div&gt;&lt;div&gt;+ title&lt;/div&gt;&lt;div&gt;+ text&lt;/div&gt;&lt;div&gt;+ dt&lt;/div&gt;&lt;div&gt;+ duration&lt;/div&gt;&lt;div&gt;+ type&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" vertex="1" parent="sVQ-PdgdpAy3A2vfllQu-3">
+          <mxGeometry y="50" width="330" height="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

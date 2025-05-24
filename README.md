@@ -2,4 +2,6 @@
 
 Приложение для диаграмм [drawio](https://www.drawio.com/)
 
+Файлы диаграмм [./drawio](./drawio/)
+
 [Курсовая](https://github.com/vafeenLabs/Coursework_6-semester)
